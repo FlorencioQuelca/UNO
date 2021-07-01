@@ -10,6 +10,8 @@ class CoinsScreen extends Component{
     componentDidMount = async () =>{
             const coins = await Http.instance.get("https://api.coinlore.net/api/lickers/");
             console.log("coins",coins);
+            const empresas = await Http.instance.get("http://localhost:8000/api/empresas");
+            console.log("Empresas",empresa);
     };
 
 
@@ -28,7 +30,7 @@ class CoinsScreen extends Component{
               
               <Text style = {styles.text1}> Edad: 30 años </Text>
               <Text style = {styles.text1}> Carrera:  Diplomado en Aplicaciones Moviles </Text>
-              <Text style = {styles.text1}> Ucatec PostGrado</Text>
+              <Text style = {styles.text1}> Ucatec PostGrado2021</Text>
               
               
                 <Pressable style = {styles.btn} onPress = {this.handlePress}>
@@ -36,9 +38,14 @@ class CoinsScreen extends Component{
                      </Text>
                 </Pressable>
 
+               
+
+
             </View>
         );
     }
+
+  
 } 
 const styles = StyleSheet.create({
         
