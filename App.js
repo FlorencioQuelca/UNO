@@ -9,13 +9,13 @@
 import React from 'react';
 
 import { NavigationContainer } from '@react-navigation/native';
-import CoinsStack from './src/component/coins/CoinsStack';
+import StackPrincipal from './src/component/StackPrincipal';
 
 const App = () => {
   return (
  
     <NavigationContainer>
-    <CoinsStack/>
+    <StackPrincipal/>
     </NavigationContainer>
 
   );
