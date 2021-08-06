@@ -1,9 +1,7 @@
 import React from 'react'
 import {Button,ScrollView,TextInput,View,StyleSheet} from 'react-native';
 const  Empresa =() => {
-
-    
-    return (
+ return (
     <ScrollView style={styles.container}>
 
         <View style={styles.inputGroup}>

@@ -6,6 +6,10 @@ import MenuRegistro from './Menu';
 import PersonaNatural from './PersonaNatural';
 import Empresa from './Empresa';
 import SociedadAccidental from './SociedadAccidental';
+import Pantalla1 from './Pantalla1';
+import Pantalla2 from './Pantalla2';
+import Detalle from './Detalle';
+
 
 const Stack = createStackNavigator();
 
@@ -13,6 +17,9 @@ const Stack = createStackNavigator();
 const StackPrincipal = () =>{
 return (
     <Stack.Navigator>  
+        <Stack.Screen name = "Bienvenido" 
+                   component = {Pantalla1}
+       />
      <Stack.Screen name = "F.P.S." 
                    component = {LoginScreen}
       />
@@ -29,10 +36,21 @@ return (
                    component = {SociedadAccidental}
       />
     
-    
+
+    <Stack.Screen name = "Proyectos Vigentes - E.SA" 
+                   component = {Pantalla2}
+       />
+    <Stack.Screen name = "Proyectos Vigentes - PN" 
+                   component = {Pantalla2}
+       />
+    <Stack.Screen name = "Detalle" 
+                   component = {Detalle}
+       />
 
     </Stack.Navigator>
     );
 
 }
+
+
 export default StackPrincipal;

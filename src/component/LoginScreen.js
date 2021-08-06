@@ -19,7 +19,6 @@ const URL  ="http://localhost:8000/api/login";
 //import MenuRegistro from './Menu'
 
 const LoginScreen = (props) => {
-
   const [state, setState] = useState({
     nit_ci: '',
     email: '',
